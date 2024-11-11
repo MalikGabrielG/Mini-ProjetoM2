@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte usada na página */
+    background-color: #f4f4f9; /* Cor de fundo da página */
+    padding: 20px; /* Espaçamento nas bordas da página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para títulos */
+h1, h2 {
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex; /* Usamos flexbox para alinhar os itens */
+    flex-direction: column; /* Colocamos os itens um abaixo do outro */
+    align-items: center; /* Alinha os itens no centro */
+    gap: 15px; /* Espaço entre os itens */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos de input (onde o usuário digita) */
+input {
+    padding: 10px; /* Espaço interno do campo */
+    width: 250px; /* Largura do campo */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Efeito ao focar no campo */
+}
+
+/* Efeito de foco nos campos */
+input:focus {
+    border-color: #4CAF50; /* Cor da borda quando o campo é clicado */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px 20px; /* Tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Aparece como mãozinha quando passa o mouse */
+    transition: background-color 0.3s; /* Efeito de cor ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #45a049; /* Cor mais escura quando passa o mouse */
+}
+
+/* Estilo da lista de itens */
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima */
+    margin-top: 20px;
+}
+
+/* Estilo dos itens da lista */
+li {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaço entre o nome/descrição e os botões */
+    align-items: center;
+    background-color: #fff; /* Cor de fundo dos itens */
+    padding: 15px; /* Espaço interno */
+    margin-bottom: 10px; /* Espaço entre os itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo dos botões de editar e excluir */
+button.edit, button.delete {
+    padding: 5px 10px; /* Tamanho dos botões */
+    font-size: 14px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Aparece como mãozinha quando passa o mouse */
+}
+
+/* Botão editar */
+button.edit {
+    background-color: #ffa500; /* Cor de fundo laranja */
+    color: white; /* Cor do texto */
+}
+
+/* Efeito ao passar o mouse no botão editar */
+button.edit:hover {
+    background-color: #ff8c00; /* Cor mais escura quando passa o mouse */
+}
+
+/* Botão excluir */
+button.delete {
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+}
+
+/* Efeito ao passar o mouse no botão excluir */
+button.delete:hover {
+    background-color: #e53935; /* Cor mais escura quando passa o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    input, button {
+        width: 100%; /* Os campos e botões ocupam toda a largura */
+    }
+
+    form {
+        width: 100%; /* O formulário ocupa toda a largura */
+        gap: 10px; /* Menos espaço entre os itens */
+    }
+
+    ul {
+        width: 90%; /* A lista ocupa 90% da largura */
+    }
+}
