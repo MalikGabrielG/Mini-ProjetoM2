@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Cadastro</title>
-    <!-- Vincula o arquivo de estilo CSS -->
+    <!-- Link para o arquivo de estilo CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <!-- Cabeçalho do site, onde fica o título -->
+    <!-- Cabeçalho do site com o título principal -->
     <header>
         <h1>Cadastro de Itens</h1>
     </header>
 
     <main>
-        <!-- Formulário para cadastro de novos itens -->
+        <!-- Seção para o formulário de cadastro -->
         <section class="form-section">
             <h2>Cadastro de Novo Item</h2>
-            <!-- Formulário onde o usuário insere os dados -->
-            <form id="formCadastro" aria-labelledby="formCadastro">
-                <input type="text" id="inputNome" placeholder="Nome do item" required aria-label="Nome do item">
-                <input type="text" id="inputDescricao" placeholder="Descrição do item" required aria-label="Descrição do item">
+            <!-- Formulário para inserir nome e descrição do item -->
+            <form id="formCadastro">
+                <input type="text" id="inputNome" placeholder="Nome do item" required>
+                <input type="text" id="inputDescricao" placeholder="Descrição do item" required>
                 <button type="submit">Cadastrar</button>
             </form>
         </section>
 
-        <!-- Lista de itens cadastrados -->
+        <!-- Seção onde os itens cadastrados serão listados -->
         <section class="list-section">
             <h2>Itens Cadastrados</h2>
-            <!-- A lista de itens será exibida aqui -->
-            <ul id="listaItens" aria-live="polite"></ul>
+            <!-- Lista dinâmica de itens cadastrados -->
+            <ul id="listaItens"></ul>
         </section>
     </main>
 
-    <!-- Rodapé do site -->
+    <!-- Rodapé do site com os direitos autorais -->
     <footer>
         <p>&copy; 2024 Sistema de Cadastro</p>
     </footer>
 
-    <!-- Vincula o arquivo de script JavaScript -->
+    <!-- Link para o arquivo de script JavaScript -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
